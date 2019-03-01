@@ -313,8 +313,6 @@ export default class PieChart extends PureComponent {
         .attr('transform', getLabelArcTransform)
         .text(getLabelText)
         .each((d, i) => currentLabels.splice(i, 1, d))
-        .transition()
-        .duration(750);
     }
 
     /*
